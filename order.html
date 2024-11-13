@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Your Order - Delicious Pizza</title>
+  <link rel="stylesheet" href="order-styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Place Your Order</h1>
+    <p>Fill in your details and choose your favorite pizza</p>
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </header>
+
+  <!-- Order Form Section -->
+  <main>
+    <section class="order-section">
+      <form action="#" method="POST" class="order-form">
+        <!-- Customer Details -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Delivery Address</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+
+        <!-- Menu Selection -->
+        <div class="menu-group">
+          <h2>Select Your Pizza</h2>
+
+          <label>
+            <input type="checkbox" name="menu[]" value="Margherita Pizza - $12.99">
+            Margherita Pizza - $12.99
+          </label>
+
+          <label>
+            <input type="checkbox" name="menu[]" value="Pepperoni Pizza - $13.99">
+            Pepperoni Pizza - $13.99
+          </label>
+
+          <label>
+            <input type="checkbox" name="menu[]" value="Veggie Supreme - $13.99">
+            Veggie Supreme - $13.99
+          </label>
+
+          <label>
+            <input type="checkbox" name="menu[]" value="BBQ Chicken Pizza - $14.99">
+            BBQ Chicken Pizza - $14.99
+          </label>
+        </div>
+
+        <!-- Quantity Selection -->
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+        </div>
+
+        <!-- Special Instructions -->
+        <div class="form-group">
+          <label for="instructions">Special Instructions</label>
+          <textarea id="instructions" name="instructions" rows="3" placeholder="e.g., extra cheese, no onions"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="order-button">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Delicious Pizza. All rights reserved.</p>
+  </footer>
+</body>
+</html>
